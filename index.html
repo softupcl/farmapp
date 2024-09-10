@@ -19,10 +19,27 @@
     <div class="container mt-3">
         <h1>Farmacias de turno</h1>
         <hr>
+        <div id="loading" class="text-center spinner"></div>
         <div id="map"></div>
 
+        <div class="row mt-3 mb-5" id="farmacias">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Dirección</th>
+                    <th scope="col">Comuna</th>
+                    <th scope="col">Teléfono</th>
+                    <th scope="col">Horarios</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                </tbody>
+              </table>
+        </div>
+     
     </div>
-
 
 
     <script src="./assets/script/script.mjs" type="module"></script>
