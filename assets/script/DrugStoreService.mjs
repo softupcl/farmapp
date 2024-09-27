@@ -1,7 +1,9 @@
-import { listDrugstores } from './DrugStoreList.mjs';
+//import { listDrugstores } from './DrugStoreList.mjs';
+import { cardsDrugstores } from './DrugStoreCards.mjs';
 
 const loaderContainer = document.querySelector('.spinner');
-const farmaciasContainer = document.querySelector('#farmacias');
+const farmaciasContainer = document.querySelector('#app');
+
 farmaciasContainer.style.display = 'none';
 
 const getDrugStore = async () => {
@@ -35,7 +37,7 @@ const getDrugstoreNearby = (farmaciasCercanas, coords) => {
         `).openPopup();
     }
 
-    listDrugstores(farmaciasCercanas)
+    cardsDrugstores(farmaciasCercanas)
 
 }
 
